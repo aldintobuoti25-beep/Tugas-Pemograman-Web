@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kopi Lokal Nusantara - UMKM Kopi Terbaik</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #fdfaf6;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    /* Header & Navigation */
+    header {
+      background: #3d2314;
+      color: #fff;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #d4a373;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .btn-main {
+      background: #d4a373;
+      color: #fff;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .btn-main:hover {
+      background: #faedcd;
+      color: #3d2314;
+    }
+
+    /* General Container */
+    .container {
+      padding: 50px 5%;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      color: #3d2314;
+    }
+
+    /* Produk Section */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin: 15px 0 5px;
+      color: #3d2314;
+    }
+    .card .price {
+      color: #d4a373;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+    .btn-wa {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+    .btn-wa:hover {
+      opacity: 0.9;
+    }
+
+    /* About Section */
+    .about-section {
+      background: #faedcd;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .about-section p {
+      max-width: 800px;
+      margin: auto;
+      color: #3d2314;
+    }
+
+    /* Footer */
+    footer {
+      background: #3d2314;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <h1>Kopi Lokal</h1>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Cita Rasa Kopi Asli Nusantara</h2>
+    <p>Dipetik langsung dari petani lokal, disajikan segar khusus untuk Anda.</p>
+    <a href="#produk" class="btn-main">Lihat Katalog Menu</a>
+  </section>
+
+  <!-- Katalog Produk Section -->
+  <section id="produk" class="container">
+    <h2 class="section-title">Produk Unggulan Kami</h2>
+    <div class="grid">
+      
+      <div class="card">
+        <div>
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Arabika Temanggung">
+          <h3>Arabika Temanggung</h3>
+          <p class="price">Rp 55.000 / 200g</p>
+          <p>Aroma buah manis dengan acidity lembut dan aftertaste yang segar.</p>
+        </div>
+        <a href="https://wa.me/628123456789?text=Halo%20saya%20mau%20pesan%20Arabika%20Temanggung" class="btn-wa" target="_blank">Pesan via WA</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <img src="https://images.unsplash.com/photo-1559525839-b18514d33551?auto=format&fit=crop&w=500&q=80" alt="Robusta Dampit">
+          <h3>Robusta Dampit</h3>
+          <p class="price">Rp 45.000 / 200g</p>
+          <p>Rasa cokelat hitam khas yang kuat dan bodi tebal, cocok untuk penikmat kopi mantap.</p>
+        </div>
+        <a href="https://wa.me/628123456789?text=Halo%20saya%20mau%20pesan%20Robusta%20Dampit" class="btn-wa" target="_blank">Pesan via WA</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=500&q=80" alt="House Blend">
+          <h3>House Blend Espresso</h3>
+          <p class="price">Rp 50.000 / 200g</p>
+          <p>Perpaduan seimbang 70% Arabika & 30% Robusta untuk olahan espresso/susu.</p>
+        </div>
+        <a href="https://wa.me/628123456789?text=Halo%20saya%20mau%20pesan%20House%20Blend" class="btn-wa" target="_blank">Pesan via WA</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tentang Kami Section -->
+  <section id="tentang" class="container">
+    <div class="about-section">
+      <h2 class="section-title">Tentang Kopi Lokal Nusantara</h2>
+      <p>Kami adalah usaha mikro kecil dan menengah (UMKM) yang berfokus menyajikan biji kopi pilihan dari berbagai pelosok Indonesia. Melalui kemitraan langsung dengan para petani lokal, kami memastikan kualitas roasted bean terbaik sekaligus mendukung kesejahteraan petani daerah.</p>
+    </div>
+  </section>
+
+  <!-- Footer / Kontak -->
+  <footer id="kontak">
+    <p>&copy; 2026 Kopi Lokal Nusantara. Dukung UMKM Indonesia.</p>
+    <p>Lokasi: Jl. Merdeka No. 12, Bandung | WhatsApp: 0812-3456-789</p>
+  </footer>
+
+</body>
+</html>
